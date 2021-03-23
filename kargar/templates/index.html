@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% load static %}
+  <title>WomanLab</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="{% static "apple-touch-icon.png" %}">
+<link rel="icon" type="image/png" sizes="32x32" href="{% static "favicon-32x32.png" %}">
+<link rel="icon" type="image/png" sizes="16x16" href="{% static "favicon-16x16.png" %}">
+<link rel="manifest" href="{% static "site.webmanifest" %}">
+<link rel="mask-icon" href="{% static "safari-pinned-tab.svg" %}" color="#5bbad5">
+<meta name="referrer" content="no-referrer-when-downgrade">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+  <meta charset="utf-8">
+  <meta name="author" content="WomanLab, Developer: Amit Singh" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+
+  body {
+    font: 400 15px/1.8 Lato, sans-serif;
+    color: #777;
+  }
+
+  h3, h4 {
+    margin: 10px 0 30px 0;
+    letter-spacing: 10px;      
+    font-size: 20px;
+    color: #111;
+  }
+
+  
+
+  /*------------NAVBAR---------------*/
+
+
+ /* Add a dark background color with a little bit see-through */
+  .navbar {
+    font-family: Montserrat, sans-serif;
+    margin-bottom: 0;
+    background-color: #2d2d30;
+    border: 0;
+    font-size: 11px !important;
+    letter-spacing: 4px;
+    opacity: 0.9;
+  }
+
+  /* Add a gray color to all navbar links */
+  .navbar li a, .navbar .navbar-brand { 
+    color: #d5d5d5 !important;
+  }
+
+  /* On hover, the links will turn white */
+  .navbar-nav li a:hover {
+    color: #fff !important;
+  }
+
+  /* The active link */
+  .navbar-nav li.active a {
+    color: #fff !important;
+    background-color: #29292c !important;
+  }
+
+  /* Remove border color from the collapsible button */
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+  }
+
+  /* Dropdown */
+  .open .dropdown-toggle {
+    color: #fff;
+    background-color: #555 !important;
+  }
+
+  /* Dropdown links */
+  .dropdown-menu li a {
+    color: #000 !important;
+  }
+
+  /* On hover, the dropdown links will turn red */
+  .dropdown-menu li a:hover {
+    background-color: red !important;
+  }
+
+  /*------------NAVBAR----END-----------*/
+
+
+
+
+
+  /*----------Banner-----------------*/
+  body{margin-top:50px;}
+  .carousel-inner img {
+    width: 100%;
+    margin: auto;
+
+    }
+  @media only screen and (max-width: 767px) {
+    .carousel-inner img {
+    height: 200px !important;
+
+    }
+    body{margin-top:55px !important;}
+    
+  }
+
+  /*----------Banner-----END------------*/
+
+
+
+/*-------------COURSE-------------------------*/
+  
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 120px;
+}
+
+@media only screen and (max-width: 768px){
+    .op {
+  grid-gap: 80px !important;
+}
+  
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #f1f1f1;
+  border-radius: 0;
+  transition: .2s;
+}
+.btn:hover, .btn:focus {
+  border: 1px solid #333;
+  background-color: #fff;
+  color: #000;
+}
+  /*-------------COURSE-----END--------------------*/
+
+/*-----------------Services--------------------------*/
+#service img {
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+          transition:         transform .8s ease-in-out;
+}
+
+#service img:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+@media only screen and (max-width: 768px){
+    #poop {
+  grid-gap: 50px !important;
+  margin-top: 0px !important;
+
+}
+  #service {
+    padding: 0px 0px !important;
+    
+  }
+
+  #kol {
+    margin-top: 30px !important;
+    
+  }
+  
+}
+
+/*-------------Services-----END--------------------*/
+
+/*-----------------Reviews--------------------------*/
+@media only screen and (max-width: 768px){
+    #review{
+      margin-top: 50px;
+    }
+    .jaga{
+      margin-bottom: 0px;
+    }
+  }
+
+
+.align-center {
+    text-align: center;
+}
+.hash-list {
+    display: block;
+    padding: 0;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px){
+    .hash-list.cols-3 > li:nth-last-child(-n+3) {
+        border-bottom: none;
+    }
+
+}
+@media (min-width: 768px){
+    .hash-list.cols-3 > li {
+        width: 33.3333%;
+    }
+}
+.hash-list > li {
+    display: block;
+    float: left;
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.pad-30, .pad-30-all > * {
+    padding: 30px;
+}
+img {
+    border: 0;
+}
+.mgb-20, .mgb-20-all > * {
+    margin-bottom: 20px;
+}
+.wpx-100, .wpx-100-after:after {
+    width: 100px;
+}
+.img-round, .img-rel-round {
+    border-radius: 50%;
+}
+.padb-30, .padb-30-all > * {
+    padding-bottom: 30px;
+}
+
+.mgb-40, .mgb-40-all > * {
+    margin-bottom: 40px;
+}
+.align-center {
+    text-align: center;
+}
+[class*="line-b"] {
+    position: relative;
+    padding-bottom: 20px;
+    border-color: #E6AF2A;
+}
+.fg-text-d, .fg-hov-text-d:hover, .fg-active-text-d.active {
+    color: #222;
+}
+.font-cond-b {
+    font-weight: 700 !important;
+}
+
+/*-----------------Reviews----END----------------------*/
+
+
+/*---------------About Us-----------------------*/
+   .bg-1 {
+    background: #2d2d30;
+    color: #bdbdbd;
+  }
+  .bg-1 h3 {color: #fff;}
+  .bg-1 p {font-style: italic;}
+
+  /*---------------About Us----END-------------------*/
+
+
+
+
+/*----------Team-----------------*/
+
+  .nav-tabs li a {
+    color: #777;
+  }
+
+  .person {
+  -webkit-filter: grayscale(90%);
+  filter: grayscale(90%);
+  border: 8px;
+  margin-bottom: 6px;
+  margin-top: 12px;
+  width: 30%;
+  height: 30%;
+  }
+
+.person:hover {
+  border-color: #f1f1f1;
+}
+
+
+/*----------Team---END--------------*/
+
+
+
+
+
+/*--------------FOOTER----------------------*/
+
+  footer {
+    background-color: #2d2d30;
+    color: #f5f5f5;
+    padding: 5px;
+  }
+  footer a {
+    color: #f5f5f5;
+  }
+  footer a:hover {
+    color: #777;
+    text-decoration: none;
+  }  
+  .form-control {
+    border-radius: 0;
+  }
+  textarea {
+    resize: none;
+  }
+
+  .fa {
+  font-size: 40px;
+  
+  
+}
+
+/* Add a hover effect if you want */
+.fa-facebook:hover {
+  color: white;
+
+}
+.fa-twitter:hover {
+  color: white;
+}
+.fa-instagram:hover {
+  color: white;
+}
+.fa-linkedin:hover {
+  color: white;
+}
+
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+
+  color: #3a5793;
+}
+
+/* Twitter */
+.fa-twitter {
+  
+  color: #379ceb;
+}
+.fa-instagram {
+  color: #c23575;
+}
+.fa-linkedin {
+  color: #2571ad;
+}
+
+@media (max-width: 767px) {
+    footer .text-right { text-align:center }
+    footer .text-left { text-align:center }
+}
+
+/*--------------FOOTER-----END-----------------*/
+
+
+
+
+  </style>
+
+
+
+</head>
+
+
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+{% load static %}
+
+
+
+<nav class="navbar navbar-default navbar-fixed-top ">
+  <div class="container-fluid ">
+    <div class="navbar-header" style="margin-top: 5px"   >
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a   href="/">
+    <img src="{% static "w_logo.png" %}" height="40" width="200">
+  </a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#myPage">HOME</a></li>
+        <li><a href="#band">COURSES</a></li>
+        <li><a href="#service">SERVICES</a></li>
+        <li><a href="#review">REVIEWS</a></li>
+        <li><a href="#tour">ABOUT US</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+        <li><a href="#team">TEAM</a></li>
+        
+        
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<script type="text/javascript">
+  $(document).on('touchend', function (event) {
+    var clickover = $(event.target);
+    var $navbar = $(".navbar-collapse");               
+    var _opened = $navbar.hasClass("in");
+    if (_opened === true && !clickover.hasClass("navbar-toggle")) {      
+        $navbar.collapse('hide');
+    }
+});
+</script>
+   <!-- end of navbar -->
+
+
+
+<!--Alert-->
+
+{% if messages %}
+{% for message in messages %}
+<div class="alert alert-{{ message.tags }} alert-dismissible" style="margin-bottom: 0px; margin-top: 50px"  >
+  <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+  {{ message }}
+</div>
+{% endfor %}
+{% endif %}
+
+
+
+
+
+<!--Banner-->
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+
+
+       {% for banner in fban %}
+
+        <div class="item active">
+        <img src="{{banner.banner.url}}" alt="Banner" width="1200" height="700" >
+        
+      </div>
+
+
+      {% endfor %}
+
+
+
+      {% for banner in banners %}
+
+        <div class="item">
+        <img src="{{banner.banner.url}}" alt="Banner" width="1200" height="700" >
+        
+      </div>
+
+      {% endfor %}
+
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+</div>
+
+
+
+
+<!-- Container (The Course Section) -->
+<div id="band" class="container text-center"  >
+
+  <h2 style="margin-top: 50px; margin-bottom: 50px; color: #000000; letter-spacing: 8px;font-family: Helvetica">COURSES</h2>
+
+  <div class="grid op">
+  {% for course in courses %}
+  <div class="item"><a href="{{course.get_absolute_url}}" style="color: inherit;"><img src="{{course.image.url}}" class="card-img-top" alt="...">
+    <b><p>{{course.name}}</p>
+    <p>₹{{course.price}}</p></b></a>
+    <a href="{{course.get_url}}" class="btn">BUY IT NOW</a>
+  </div>
+  {% endfor %}
+
+</div>
+  </div>
+
+
+
+<!-- Container (Service) -->
+<div id="service" class="container text-center" style="padding: 80px 120px;"  >
+  <br>
+  <h2 id="kol" style=" color: #000000; margin-top: 0px; ">Why Choose WomanLab?</h2>
+  <div class="grid" id="poop" style="grid-gap: 80px; margin-top: 70px;">
+    <div class="item">
+      <img src="{% static "certificate.png" %}" class="wpx-100 img-round mgb-20" data-edit="false" data-editor="field" data-field="src[Image Path]; title[Image Title]; alt[Image Alternate Text]">
+
+      <p class="fs-110 font-cond-l" contenteditable="false"><center><h4 style="letter-spacing: 5px">Certificate</h4></center>Certificates will be provided to all participants after successful completion of the course.</p>
+    </div>
+     <div class="item">
+      <img src="{% static "ebook.png" %}" class="wpx-100 img-round mgb-20" data-edit="false" data-editor="field" data-field="src[Image Path]; title[Image Title]; alt[Image Alternate Text]">
+      <p class="fs-110 font-cond-l" contenteditable="false"><center><h4 style="letter-spacing: 5px">E-Book</h4></center>E-Book with the list of items & recipes, so you are ready with all the items before the course starts.</p>
+    </div>
+     <div class="item">
+      <img src="{% static "video.png" %}" class="wpx-100 img-round mgb-20" data-edit="false" data-editor="field" data-field="src[Image Path]; title[Image Title]; alt[Image Alternate Text]">
+      <p class="fs-110 font-cond-l" contenteditable="false"><center><h4 style="letter-spacing: 5px">Recording</h4></center>Recording of the live courses will be provided to all participants so you can practice again from the comfort of your home.</p>
+    </div>
+
+    <div class="item">
+      <img src="{% static "customer.png" %}" class="wpx-100 img-round mgb-20" data-edit="false" data-editor="field" data-field="src[Image Path]; title[Image Title]; alt[Image Alternate Text]">
+      <p class="fs-110 font-cond-l" contenteditable="false"><center><h4 style="letter-spacing: 5px">Customer Support</h4></center>Available for you round the clock. We understand the seriousness of solving each and every query of our customers.
+</p>
+    </div>
+    <div class="item">
+      <img src="{% static "community.png" %}" class="wpx-100 img-round mgb-20" data-edit="false" data-editor="field" data-field="src[Image Path]; title[Image Title]; alt[Image Alternate Text]">
+      <p class="fs-110 font-cond-l" contenteditable="false"><center><h4 style="letter-spacing: 5px">Active community</h4></center>Be a part of a wholesome community of like-minded women and discuss & embrace your skills together.
+</p>
+    </div>
+     <div class="item">
+      <img src="{% static "heart.png" %}" class="wpx-100 img-round mgb-20" data-edit="false" data-editor="field" data-field="src[Image Path]; title[Image Title]; alt[Image Alternate Text]">
+      <p class="fs-110 font-cond-l" contenteditable="false"><center><h4 style="letter-spacing: 5px">Affordable Price</h4></center>Exclusive courses with excellent learnings and service at the best price ever.
+</p>
+    </div>
+
+  </div>
+</div>
+
+<!-- Container (Review) -->
+
+
+<div id="review" class="container" >
+    <div class="mgb-40 padb-30 auto-invert line-b-4 align-center">
+        <h5 class="font-cond-l fg-accent lts-md mgb-10" contenteditable="false">Not Yet Convinced?
+        
+        </h5>
+        <h1 class="font-cond-b fg-text-d lts-md fs-300 fs-300-xs no-mg jaga"  contenteditable="false">Read Customer Reviews</h1>
+    </div>
+    <ul class="hash-list cols-3 cols-1-xs pad-30-all align-center text-sm">
+        <li>
+          <img src="{% static "avatar1.png" %}" class="wpx-100 img-round mgb-20" title="" alt="" data-edit="false" data-editor="field" data-field="src[Image Path]; title[Image Title]; alt[Image Alternate Text]">
+          <p class="fs-110 font-cond-l" contenteditable="false">" Loved the candle making workshop. Very satisfied with the live session. All questions were answered on whatsapp group. I would definitely recommend this service. "</p>
+          <h5 class="font-cond mgb-5 fg-text-d fs-130" contenteditable="false">Anjali Bhadauria</h5>
+          <small class="font-cond case-u lts-sm fs-80 fg-text-l" contenteditable="false">Lucknow</small>
+        </li>
+        <li>
+          <img src="{% static "avatar2.png" %}" class="wpx-100 img-round mgb-20" title="" alt="" data-edit="false" data-editor="field" data-field="src[Image Path]; title[Image Title]; alt[Image Alternate Text]">
+          <p class="fs-110 font-cond-l" contenteditable="false">" I have completed three courses with WomanLab and I am very impressed and satisfied. I am able to cook those dishes for my family. Highly recommended! "</p>
+          <h5 class="font-cond mgb-5 fg-text-d fs-130" contenteditable="false">Sangeeta Varma</h5>
+          <small class="font-cond case-u lts-sm fs-80 fg-text-l" contenteditable="false">Mumbai</small>
+        </li>
+        <li>
+          <img src="{% static "avatar4.jpeg" %}" class="wpx-100 img-round mgb-20" title="" alt="" data-edit="false" data-editor="field" data-field="src[Image Path]; title[Image Title]; alt[Image Alternate Text]">
+          <p class="fs-110 font-cond-l" contenteditable="false">" It has been a joy to complete the cake baking course. Their team takes such good care addressing all the queries and wants of clients! I have learnt 4 types of cakes to bake. "</p>
+          <h5 class="font-cond mgb-5 fg-text-d fs-130" contenteditable="false">Natasha John</h5>
+          <small class="font-cond case-u lts-sm fs-80 fg-text-l" contenteditable="false">Kochi</small>
+        </li>
+      </ul>
+</div>
+<h5 style="color: #2381f6;text-align: center; font-size: 50; font-family: Arial;" >See All Reviews</h5>
+
+
+ 
+
+
+
+
+
+<!-- Container (About Us) -->
+<div id="tour" class="bg-1">
+  <div class="container" >
+    <div style="margin-top: 20px; margin-bottom: 20px;">
+    <h3 class="text-center">ABOUT US</h3>
+    <p class="text-center">A 2-year roller coaster started from Pune which we had undergone to pursue a dream, was reaching its next step. We had built a sound business and were a strong team who had managed to overcome various challenges. We were gearing up to launch in 3 more cities.</p>
+<p class="text-center">And then comes the villain in our story, the word COVID storms its way into our lives, followed by the term lockdown. Further, a notice saying all offices & studios must be shut. The word “community” on which the essence of our business was based on, had become the biggest threat.</p>
+<p class="text-center">As usual, we took it up as one of that zillionth challenge in our journey. Few minutes to absorb the situation and then turned the hustle mode on till the problems were solved. We launched online classes, trained our partners to go online. It was time to make some tough calls. We had to let go of some members of the team, we left our offices, returned the coffee machine and were almost back to Day 1 and back to the basics to ensure we survive.</p> 
+<p class="text-center">We are a smaller team now and continue to provide the same quality of skills and services online. Our online services include some exciting courses like Cake baking, Candle Making, Make-up, Spoken English, Tailoring, Cooking and much more at the most cost-efficient price ever.</p>
+    </div>
+    </div>
+  </div>
+  
+ 
+
+<!-- Container (Contact Section) -->
+<div id="contact" class="container" >
+  <h3 class="text-center" style="margin-top: 50px; margin-bottom: 50px;">Contact</h3>
+    <p class="text-center"><em>We love our community!</em></p>
+
+  <div class="row" >
+    <div class="col-md-4">
+      <p>Get in touch with us.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span>Pune, India</p>
+      <p><span class="glyphicon glyphicon-phone"></span>Phone: <a style="color: inherit;" href="tel:7030866411" >+91 7030866411</a></p>
+      <p><span class="glyphicon glyphicon-envelope"></span> Email: connect@womanlab.in</p>
+    </div>
+    <form method="post" action="">
+      {% csrf_token %}
+      
+    <div class="col-md-8">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="phone" name="phone" placeholder="Phone number" type="phone" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+      <br>
+      <div class="row">
+        <div class="col-md-12 form-group">
+          <button class="btn pull-right" type="submit">Send</button>
+        </div>
+      </div>
+    
+  </form>
+  </div>
+</div>
+  <br>
+  
+
+
+<!--Team-->
+
+<div id="team">
+  <br>
+  <h3 class="text-center">Our Team</h3>  
+  <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#home">Sehej</a></li>
+    <li><a data-toggle="tab" href="#menu1">Ritika</a></li>
+    <li><a data-toggle="tab" href="#menu2">Tejaswini</a></li>
+    <li><a data-toggle="tab" href="#menu3">Amit</a></li>
+    <li><a data-toggle="tab" href="#menu4">Smita</a></li>
+    <li><a data-toggle="tab" href="#menu5">Mukul</a></li>
+
+  </ul>
+
+  <div class="tab-content" style="margin-bottom: 50px">
+    <div id="home" class="tab-pane fade in active">
+      <img src="{% static "team2.png" %}" class="img-circle person" alt="Random Name">
+      <h2>Creative Director</h2>
+      <p>Always a creative idea on my mind. Love to brainstorm and ideate.</p>
+    </div>
+    <div id="menu1" class="tab-pane fade">
+      <img src="{% static "team1.png" %}" class="img-circle person" alt="Random Name">
+      <h2>Sales Manager</h2>
+      <p>Always a pleasure people! Hope you enjoyed it as much as I did. Could I BE.. any more pleased?</p>
+    </div>
+    <div id="menu2" class="tab-pane fade">
+      <img src="{% static "team3.png" %}" class="img-circle person" alt="Random Name">
+      <h2>HR Manager</h2>
+      <p>To win the marketplace you must first win the workplace.</p>
+    </div>
+    <div id="menu3" class="tab-pane fade">
+      <img src="{% static "team4.png" %}" class="img-circle person" alt="Random Name">
+      <h2>Chief Technology Officer</h2>
+      <p>I mean, sometimes I enjoy the show, but other times I enjoy other things.</p>
+    </div>
+    <div id="menu4" class="tab-pane fade">
+      <img src="{% static "team5.png" %}" class="img-circle person" alt="Random Name">
+      <h2>Graphic Designer</h2>
+      <p>There are three responses to a piece of design - yes, no and WOW! Wow is the one to aim for.</p>
+    </div>
+     <div id="menu5" class="tab-pane fade">
+      <img src="{% static "team6.jpeg" %}" class="img-circle person" alt="Random Name">
+      <h2>Customer Support</h2>
+      <p>Diligent in work, humble by personality.</p>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<!-- Image of location/map -->
+<img src="{% static "map1.jpg" %}" class="img-responsive" style="width:100%;">
+
+
+<!-- Footer -->
+<footer class="text-center">
+  <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a><br>
+
+
+  <div class="grid" style="grid-gap: 0px;">
+  
+  <div class="item text-left" style="margin-left: 10px">
+    <p><span class="glyphicon glyphicon-map-marker"></span>Pune, India</p>
+      <p><span class="glyphicon glyphicon-phone"></span>Phone: <a style="color: inherit;" href="tel:7030866411" >+91 7030866411</a></p>
+      <p><span class="glyphicon glyphicon-envelope"></span> Email: connect@womanlab.in</p>
+  </div>
+  <div class="item text-right" style="margin-top: 30px" >
+    <a style="margin-right: 10px" href="https://facebook.com/womanlabindia" rel="noopener noreferrer" target="_blank" class="fa fa-facebook"></a>
+<a style="margin-right: 10px" href="https://twitter.com/WomanLab_in?s=08" rel="noopener noreferrer" target="_blank" class="fa fa-twitter"></a>
+<a style="margin-right: 10px" href="https://instagram.com/womanlab_in?igshid=13ypi5ypy13u2" rel="noopener noreferrer" target="_blank" class="fa fa-instagram"></a>
+<a style="margin-right: 20px" href="https://www.linkedin.com/company/womanlab" rel="noopener noreferrer" target="_blank" class="fa fa-linkedin"></a>
+  </div>
+  
+</div>
+
+  <p>Copyright © 2020 | All rights reserved, WomanLab</p> 
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Initialize Tooltip
+  $('[data-toggle="tooltip"]').tooltip(); 
+  
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+})
+
+</script>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/5f93f704194f2c4cbeb89e1d/1eld9dujl';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+
+</body>
+</html>

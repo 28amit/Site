@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+<head>
+  {% load static %}
+	<title>WomanLab</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="{% static "apple-touch-icon.png" %}">
+<link rel="icon" type="image/png" sizes="32x32" href="{% static "favicon-32x32.png" %}">
+<link rel="icon" type="image/png" sizes="16x16" href="{% static "favicon-16x16.png" %}">
+<link rel="manifest" href="{% static "site.webmanifest" %}">
+<link rel="mask-icon" href="{% static "safari-pinned-tab.svg" %}" color="#5bbad5">
+<meta name="referrer" content="no-referrer-when-downgrade">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<style type="text/css">
+		  .navbar {
+    font-family: Montserrat, sans-serif;
+    margin-bottom: 0;
+    background-color: #2d2d30;
+    border: 0;
+    font-size: 11px !important;
+    letter-spacing: 4px;
+    opacity: 0.9;
+  }
+
+  /* Add a gray color to all navbar links */
+  .navbar li a, .navbar .navbar-brand { 
+    color: #d5d5d5 !important;
+  }
+
+  /* On hover, the links will turn white */
+  .navbar-nav li a:hover {
+    color: #fff !important;
+  }
+
+  /* The active link */
+  .navbar-nav li.active a {
+    color: #fff !important;
+    background-color: #29292c !important;
+  }
+
+  /* Remove border color from the collapsible button */
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+  }
+
+  /* Dropdown */
+  .open .dropdown-toggle {
+    color: #fff;
+    background-color: #555 !important;
+  }
+
+  /* Dropdown links */
+  .dropdown-menu li a {
+    color: #000 !important;
+  }
+
+  /* On hover, the dropdown links will turn red */
+  .dropdown-menu li a:hover {
+    background-color: red !important;
+  }
+  .btn {
+  padding: 10px 20px;
+
+  background-color: #333;
+  color: #f1f1f1;
+  border-radius: 0;
+  transition: .2s;
+}
+.btn:hover, .btn:focus {
+  border: 1px solid #333;
+  background-color: #fff;
+  color: #000;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 120px;
+}
+
+@media only screen and (max-width: 767px) {
+    .bich {
+      text-align: center;
+    }
+    .row {
+      margin-top: 55px !important;
+    }
+    .thora {
+      margin-left: 10px;
+    }
+    .op {
+  grid-gap: 80px !important;
+}
+    
+  }
+
+  footer {
+    background-color: #2d2d30;
+    color: #f5f5f5;
+    padding: 5px;
+  }
+  footer a {
+    color: #f5f5f5;
+  }
+  footer a:hover {
+    color: #777;
+    text-decoration: none;
+  }  
+  .form-control {
+    border-radius: 0;
+  }
+  textarea {
+    resize: none;
+  }
+
+  .fa {
+  font-size: 40px;
+  
+  
+}
+
+/* Add a hover effect if you want */
+.fa-facebook:hover {
+  color: white;
+
+}
+.fa-twitter:hover {
+  color: white;
+}
+.fa-instagram:hover {
+  color: white;
+}
+.fa-linkedin:hover {
+  color: white;
+}
+
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+
+  color: #3a5793;
+}
+
+/* Twitter */
+.fa-twitter {
+  
+  color: #379ceb;
+}
+.fa-instagram {
+  color: #c23575;
+}
+.fa-linkedin {
+  color: #2571ad;
+}
+
+@media (max-width: 767px) {
+    footer .text-right { text-align:center }
+    footer .text-left { text-align:center }
+}
+
+	</style>
+
+ 
+
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+
+{% load static %}
+
+
+
+<nav class="navbar navbar-default navbar-fixed-top ">
+  <div class="container-fluid ">
+    <div class="navbar-header" style="margin-top: 5px"  >
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a   href="/">
+    <img src="{% static "w_logo.png" %}" height="40" width="200">
+  </a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/">HOME</a></li>
+        <li><a href="/">COURSES</a></li>
+        <li><a href="/">SERVICES</a></li>
+        <li><a href="/">REVIEWS</a></li>
+        <li><a href="/">ABOUT US</a></li>
+        <li><a href="/">CONTACT</a></li>
+        <li><a href="/">TEAM</a></li>
+        
+        
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+<script type="text/javascript">
+  $(document).on('touchend', function (event) {
+    var clickover = $(event.target);
+    var $navbar = $(".navbar-collapse");               
+    var _opened = $navbar.hasClass("in");
+    if (_opened === true && !clickover.hasClass("navbar-toggle")) {      
+        $navbar.collapse('hide');
+    }
+});
+</script>
+
+<div class="row" style="margin-top: 90px; margin-right: 0px; margin-left: 0px;">
+  <div class="col-md-6" style="padding: 0px;"><img src="{{course.bigImage.url}}" width="100%"  ></div>
+  <div class="col-md-6"><div class="bich"><h2><p>{{course.name}}</p>
+  <p>₹{{course.price}}</p></h2>
+	<h4><p>Time: {{course.time}}</p></h4>
+	<br>
+	<a href="{{course.get_url}}" class="btn">BUY IT NOW</a></div><br>
+<div class="thora"><p>{{course.description}}</p>
+<p>{{course.module}}</p>
+<p>{{course.points|linebreaksbr}}</p>
+<p>
+<h5>What you get:</h5>
+1. Live Classes with Q&A<br>
+2. Completion certificate<br>
+3. Recordings of all the sessions<br>
+4. E-book/notes/assignments<br>
+5. Active community on whatsapp</p>
+<br>
+<p><b>Language:</b> Hindi, English [Instructor will be using a mix of both languages]</p>
+<br>
+<p><b>Note:</b> All classes will be conducted over the Zoom video app. Once the payment is made, you will be added to a Whatsapp group for all the further communication about classes. 
+
+</p>
+</div>
+</div>
+</div>
+<div class="container text-center"  style="margin-bottom: 15px; color: #777; font: 400 15px/1.8 Lato, sans-serif" >
+
+  <h2 style="margin-top: 50px; margin-bottom: 50px; color: #000000; ">YOU MAY ALSO LIKE</h2>
+
+  <div class="grid op">
+  {% for c in lesson %}
+  {% if c.id != course.id %}
+  <div class="item"><a href="{{c.get_absolute_url}}" style="color: inherit;" ><img src="{{c.image.url}}" class="card-img-top" alt="...">
+    <b><p>{{c.name}}</p>
+    <p>₹{{c.price}}</p></b></a>
+    <a href="{{c.get_url}}" class="btn">BUY IT NOW</a>
+  </div>
+  {% endif %}
+  {% endfor %}
+
+</div>
+  </div>
+  <footer class="text-center" style="margin-top: 50px">
+  <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a><br>
+
+
+  <div class="grid" style="grid-gap: 0px;">
+  
+  <div class="item text-left" style="margin-left: 10px">
+    <p><span class="glyphicon glyphicon-map-marker"></span>Pune, India</p>
+      <p><span class="glyphicon glyphicon-phone"></span>Phone: <a style="color: inherit;" href="tel:7030866411" >+91 7030866411</a></p>
+      <p><span class="glyphicon glyphicon-envelope"></span> Email: connect@womanlab.in</p>
+  </div>
+  <div class="item text-right" style="margin-top: 30px" >
+    <a style="margin-right: 10px" href="https://facebook.com/womanlabindia" rel="noopener noreferrer" target="_blank" class="fa fa-facebook"></a>
+<a style="margin-right: 10px" href="https://twitter.com/WomanLab_in?s=08" rel="noopener noreferrer" target="_blank" class="fa fa-twitter"></a>
+<a style="margin-right: 10px" href="https://instagram.com/womanlab_in?igshid=13ypi5ypy13u2" rel="noopener noreferrer" target="_blank" class="fa fa-instagram"></a>
+<a style="margin-right: 20px" href="https://www.linkedin.com/company/womanlab" rel="noopener noreferrer" target="_blank" class="fa fa-linkedin"></a>
+  </div>
+  
+</div>
+
+  <p>Copyright © 2020 | All rights reserved, WomanLab</p> 
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Initialize Tooltip
+  $('[data-toggle="tooltip"]').tooltip(); 
+  
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+})
+
+</script>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/5f93f704194f2c4cbeb89e1d/1eld9dujl';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+</body>
+</html>
