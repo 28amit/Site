@@ -27,7 +27,7 @@ SECRET_KEY = 'i^^_k*)xb^g(9j=_^qji=#nss8)^068rs&qhy#b=g(4#fp^nm8'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = ['127.0.0.1','womanlab.herokuapp.com']
 
 
 # Application definition
