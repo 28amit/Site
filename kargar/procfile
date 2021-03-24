@@ -1,1 +1,0 @@
-web: gunicorn kargar.wsgi --log-file -
