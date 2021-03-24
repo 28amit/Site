@@ -130,4 +130,4 @@ STATICFILES_DIRS = [
 ]
 
 MEDIA_URL = "/banner/"
-MEDIA_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
