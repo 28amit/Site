@@ -451,7 +451,7 @@ img {
        {% for banner in fban %}
 
         <div class="item active">
-        <img src="{{banner.banner.url}}" alt="Banner" width="1200" height="700" >
+        <img src="{% static "1.png" %}" alt="Banner" width="1200" height="700" >
         
       </div>
 
@@ -460,14 +460,16 @@ img {
 
 
 
-      {% for banner in banners %}
 
         <div class="item">
-        <img src="{{banner.banner.url}}" alt="Banner" width="1200" height="700" >
+        <img src="{% static "2.png" %}" alt="Banner" width="1200" height="700" >
+        
+      </div>
+      <div class="item">
+        <img src="{% static "3.png" %}" alt="Banner" width="1200" height="700" >
         
       </div>
 
-      {% endfor %}
 
     </div>
 
